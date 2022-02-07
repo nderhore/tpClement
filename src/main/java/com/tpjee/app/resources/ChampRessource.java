@@ -16,15 +16,15 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import com.tpjee.app.ejb.Appli;
-import com.tpjee.app.model.Range;
+import com.tpjee.app.model.Vin;
 
 /**
- * champion de lol
+ * vin
  */
 @Path("range")
 public class ChampRessource {
 
-  static List<Range> champ = new ArrayList<>();
+  static List<Vin> champ = new ArrayList<>();
 
 @Inject
 Appli appli;
@@ -32,28 +32,28 @@ Appli appli;
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   public Response get() {
-    return Response.ok(appli.getCrewMembers()).build();
+    return Response.ok(appli.getAllVin()).build();
   }
 
   @POST
   @Consumes(MediaType.APPLICATION_JSON)
-  public Response post(Range champion) {
-    appli.addCrewMember(champion);
+  public Response post(Vin vin) {
+    appli.addVin(vin);
     return Response.ok().build();
   }
 
   @DELETE
   @Path("{name}")
   public Response delete(@PathParam("name") String name) {
-      appli.deleteCrewMemberByName(name);
+      appli.deleteVinByName(name);
       return Response.ok().build();
   }
 
   @PUT
   @Consumes(MediaType.APPLICATION_JSON)
-  public Response update(Range champ) {
-  appli.update(champ);
-  return Response.ok().build();
+  public Response update(Vin nomVin) {
+    appli.update(nomVin);
+    return Response.ok().build();
   }
 }
 

@@ -1,7 +1,7 @@
 
-http://localhost:8080/lol/resources/range
+http://localhost:8080/tpjee/resources/range
 ###
-POST http://localhost:8080/lol/resources/range
+POST http://localhost:8080/tpjee/resources/range
 Content-Type: application/json
 
 {
@@ -9,10 +9,10 @@ Content-Type: application/json
   "poste": "mid"
 }
 ###
-DELETE http://localhost:8080/lol/resources/range/caitlyn
+DELETE http://localhost:8080/tpjee/resources/range/caitlyn
 
 ###
-PUT http://localhost:8080/lol/resources/range
+PUT http://localhost:8080/tpjee/resources/range
 Content-Type: application/json
 
 {

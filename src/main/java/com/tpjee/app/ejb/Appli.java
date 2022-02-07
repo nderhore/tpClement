@@ -5,46 +5,45 @@ import java.util.List;
 
 import javax.ejb.Stateless;
 
-import com.tpjee.app.model.Range;
+import com.tpjee.app.model.Vin;
 
 @Stateless
 public class Appli {
 
-    private static List<Range> champs = new ArrayList<>();
+    private static List<Vin> vins = new ArrayList<>();
 
-    public List<Range> getCrewMembers() {
-        return champs;
+    public List<Vin> getAllVin() {
+        return vins;
     }
 
-    public void addCrewMember(Range addchamp) {
-        champs.add(addchamp);
+    public void addVin(Vin vin) {
+        vins.add(vin);
     }
 
-    public void deleteCrewMemberByName(String name) {
-
-        List<Range> tempList = new ArrayList<>();
-        for (var champdel : champs) {
-            if (!champdel.getName().equals(name)) {
-                tempList.add(champdel);
+    public void deleteVinByName(String name) {
+        List<Vin> tempList = new ArrayList<>();
+        for (var unVin : vins) {
+            if (!unVin.getNomVin().equals(name)) {
+                tempList.add(unVin);
             }
         }
-        champs.clear();
-        champs.addAll(tempList);
+        vins.clear();
+        vins.addAll(tempList);
     }
 
-    public void update(Range champ) {
+    public void update(Vin oldVin) {
 
-        String Name = champ.getName();
-        String Leposte = champ.getPoste();
-        List<Range> tempList = new ArrayList<>();
+        String name = oldVin.getNomVin();
+        String millesime = oldVin.getMillesime();
+        List<Vin> tempList = new ArrayList<>();
 
-        for (var Poste : champs) {
-            if (Poste.getName().equals(Name)) {
-                Poste.setPoste(Leposte);
+        for (var vin : vins) {
+            if (vin.getNomVin().equals(name)) {
+                vin.setMillesime(millesime);
             }
-            tempList.add(Poste);
+            tempList.add(vin);
         }
-        champs.clear();
-        champs.addAll(tempList);
+        vins.clear();
+        vins.addAll(tempList);
     }
 }
