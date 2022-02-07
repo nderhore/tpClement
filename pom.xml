@@ -100,7 +100,7 @@
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                     <outputDirectory>target/wildfly-9.0.1.Final/standalone/deployments</outputDirectory>
-                    <warName>hktest</warName>
+                    <warName>tpjee</warName>
                 </configuration>
             </plugin>
         </plugins>
