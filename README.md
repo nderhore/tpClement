@@ -1,4 +1,4 @@
-# Project com.tpjee.app/lol
+# Project com.tpjee.app
 
 Steps to run this project:
 
