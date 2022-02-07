@@ -1,0 +1,21 @@
+
+http://localhost:8080/lol/resources/range
+###
+POST http://localhost:8080/lol/resources/range
+Content-Type: application/json
+
+{
+  "name": "caitlyn",
+  "poste": "mid"
+}
+###
+DELETE http://localhost:8080/lol/resources/range/caitlyn
+
+###
+PUT http://localhost:8080/lol/resources/range
+Content-Type: application/json
+
+{
+  "name": "caitlyn",
+  "poste": "adc"
+}
