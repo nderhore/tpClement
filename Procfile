@@ -1,1 +1,1 @@
-web: ${JBOSS_HOME}/bin/standalone.sh -b 0.0.0.0 -Djboss.http.port=$PORT
+web: java -Dswarm.http.port=$PORT -jar target/*.war
