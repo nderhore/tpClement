@@ -21,7 +21,7 @@ import com.tpjee.app.model.Vin;
 /**
  * vin
  */
-@Path("range")
+@Path("vin")
 public class ChampRessource {
 
   static List<Vin> champ = new ArrayList<>();

@@ -1,21 +1,29 @@
-
-http://localhost:8080/tpjee/resources/range
+//Recuperation de tous les vins
+http://localhost:8080/tpjee/resources/vin
 ###
-POST http://localhost:8080/tpjee/resources/range
+
+//Création d'un vin
+POST http://localhost:8080/tpjee/resources/vin
 Content-Type: application/json
 
 {
-  "name": "caitlyn",
-  "poste": "mid"
+  "nomVin": "medoc",
+  "millesime": "2015"
 }
-###
-DELETE http://localhost:8080/tpjee/resources/range/caitlyn
+
 
 ###
-PUT http://localhost:8080/tpjee/resources/range
+
+//Suppression d'un vin
+DELETE http://localhost:8080/tpjee/resources/vin/medoc
+
+###
+
+//Mise à jour d'un vin
+PUT http://localhost:8080/tpjee/resources/vin
 Content-Type: application/json
 
 {
-  "name": "caitlyn",
-  "poste": "adc"
+  "nomVin": "bourgogne",
+  "millesime": "2013"
 }
