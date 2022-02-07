@@ -1,4 +1,4 @@
-package com.lol.app;
+package com.tpjee.app;
 
 import javax.inject.Inject;
 import javax.ws.rs.GET;

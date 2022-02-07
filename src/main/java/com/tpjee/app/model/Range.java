@@ -1,4 +1,4 @@
-package com.lol.app.model;
+package com.tpjee.app.model;
 
 public class Range {
     private String name;

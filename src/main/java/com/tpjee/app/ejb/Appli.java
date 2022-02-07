@@ -1,11 +1,11 @@
-package com.lol.app.ejb;
+package com.tpjee.app.ejb;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.ejb.Stateless;
 
-import com.lol.app.model.Range;
+import com.tpjee.app.model.Range;
 
 @Stateless
 public class Appli {

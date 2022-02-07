@@ -1,4 +1,4 @@
-package com.lol.app.resources;
+package com.tpjee.app.resources;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,8 +15,8 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import com.lol.app.ejb.Appli;
-import com.lol.app.model.*;
+import com.tpjee.app.ejb.Appli;
+import com.tpjee.app.model.Range;
 
 /**
  * champion de lol
