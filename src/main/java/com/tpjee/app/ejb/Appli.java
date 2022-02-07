@@ -22,7 +22,7 @@ public class Appli {
 
     public void deleteVinByName(String name) {
         List<Vin> tempList = new ArrayList<>();
-        for (var unVin : vins) {
+        for (Vin unVin : vins) {
             if (!unVin.getNomVin().equals(name)) {
                 tempList.add(unVin);
             }
@@ -37,7 +37,7 @@ public class Appli {
         String millesime = oldVin.getMillesime();
         List<Vin> tempList = new ArrayList<>();
 
-        for (var vin : vins) {
+        for (Vin vin : vins) {
             if (vin.getNomVin().equals(name)) {
                 vin.setMillesime(millesime);
             }
